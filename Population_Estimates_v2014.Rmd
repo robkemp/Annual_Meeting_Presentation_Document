@@ -261,7 +261,7 @@ The graph below shows Colorado's net migration rate from 2004 to 2014 with shadi
 
 ```{r}
 data=readr::read_csv("netMigData_AnnMeet2015.csv")
-netMigCluster=readr::read_csv("J:/Estimates/Other/Research/ruralUrbanMigration_CO/netMigClusters_AnnualMeeting.csv")
+netMigCluster=readr::read_csv("netMigClusters_AnnualMeeting.csv")
 
 data%>%
   filter(year>=2004)%>%
