@@ -230,7 +230,7 @@ county_profile%>%
 ```
 
 
-Net migration is far more variable over time than natural increase is.  Net migration is very closely related with economic health and job creation, particularly in how Colorado is doing relative to the rest of the United States.  The chart below shows net migration from 2000 to 2014.  The year 2000 marked the highest net migration level in Colorado history, but was followed by years of very low net migration due to the impact of the early-2000s "Tech Bust."  Net migration began to recover in 2006, but wsa yet again dampened by a recession, the "Great Recession." Colorado faired better in the Great Recession than the rest of the Nation and did not see the same drop off in net migration experienced in other states.  Net migration had recovered to the pre-recession peak by 2013 and continues to grow in 2014.
+Net migration is far more variable over time than natural increase is.  Net migration is very closely related with economic health and job creation, particularly in how Colorado is doing relative to the rest of the United States.  The chart below shows net migration from 2000 to 2014.  The year 2000 marked the highest net migration level in Colorado history, but was followed by years of very low net migration due to the impact of the early-2000s "Tech Bust."  Net migration began to recover in 2006, but was yet again dampened by a recession, the "Great Recession." Colorado faired better in the Great Recession than the rest of the Nation and did not see the same drop off in net migration experienced in other states.  Net migration had recovered to the pre-recession peak by 2013 and continues to grow in 2014.
 
 
 ```{r}
@@ -259,7 +259,7 @@ county_profile%>%
 * Three Biggest Trading Partners: CA, TX, NY
 
 
-## Migration Rates over time
+## Migration Rates Over Time
 
 The graph below shows Colorado's net migration rate from 2004 to 2014 with shading denoting periods of time related to the recession.  These periods are related to periods of job growth showing the 2004 to 2006 period as 'Pre-Recession', the 2007 to 2010 period as the 'Recession' since those represent the so-called 'peak' and 'trough' of the job trend, and 2010 to 2014 as the 'Recovery' since that period marks consistent job growth overall.  The migration rate had begun to recover from the early-2000s recession during the Pre-Recession period, but declined during the recession.  Migration continued to decline into the Recovery period but began to increase again after 2011.  The migration rate for Colorado finally recovered to the pre-recession peak in 2013 and for the first time in 2014 is now higher.  
 
@@ -287,12 +287,20 @@ data%>%
 
 ```
 
+## Geographic Distribution of Migration Over Time
+
 These overall trends though mask changes in where the net migration was going within the state. The figure below shows net migration rates by county for each of the three periods.  Pre-recession, migration was far more dispersed geographically, especially important was the strong net migration on the Western Slope during this period due to the Oil-Shale boom. During the recession net migration began to shift toward the Front Range, but the Western Slope stayed strong as they were later into the recession owing to a bust in the Oil-Shale industry.  The recovery period shows how dominant the Front Range has been, particularly showing the continuing the strength of the Northern Front Range.
 
 
 ![small_multiple_migration_map](SmallMultiplesNetMigrationMaps.png)
 
-To further investigate this, I used a method called k-means clustering to identify clusters of counties based on their total number of jobs and net migration rates during the recovery period.  The follow chart shows the results of this preliminary analysis.  The counties in yellow are those that were strong growers in the pre-recession period, but have cooled off or even begun to see negative net migration in come cases.  These are still important growth engine counties.  Counties in red were predominantly tourism-based economies and while they stayed strong through the recession, they've seen much lower migration rates during the recovery.  The counties in green and blue had very low migration rates in the pre-recession period, but during the recession and recovery, saw dramatic increases in their net migration, reflecting the move toward the Front Range and areas of economic diversity.  Finally, those counties in orange that, in general, were losing migrants before the recession, are still losing migrants, but at a lower rate.  
+## Initial Next Steps: Cluster Analysis
+
+To further investigate this, I used a method called k-means clustering to identify clusters of counties based on their total number of jobs and net migration rates during the recovery period.  The following chart shows the results of this preliminary analysis.  The counties in yellow are those that were strong growers in the pre-recession period, but have cooled off or even begun to see negative net migration in come cases.  These are still important growth engine counties.  Counties in red were predominantly tourism-based economies and while they stayed strong through the recession, they've seen much lower migration rates during the recovery.  The counties in green and blue had very low migration rates in the pre-recession period, but during the recession and recovery, saw dramatic increases in their net migration, reflecting the move toward the Front Range and areas of economic diversity.  Finally, those counties in orange that, in general, were losing migrants before the recession, are still losing migrants, but at a lower rate.  
 
 
 ![clusterNetMigRateChart](ClusterNetMigMapChart.png)
+
+## So what?
+
+While this certainly underscores the increasing importance of counties with a larger share of jobs, it is unclear what else may be going on from this initial analysis.  Further steps need to be taken to better understand the pattern.  Similar National-level analyses have claimed that the demographic impact of the recession is persisting, which doesn't seem to fit in Colorado, or that perhaps a 'new normal' has emerged and the current migration patterns will hold until the next economic shock. Further analyses should include more in-depth validation of the clustering, checking into the effect of economic diversity, investigating other scale impacts such as population size and net migration flows.  
