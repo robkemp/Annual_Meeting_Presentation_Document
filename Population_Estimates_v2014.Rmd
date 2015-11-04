@@ -24,6 +24,8 @@ codemog_pal=c(rgb(31,73,125, max=255),
               rgb(119, 171, 67, max = 255),
               rgb(208, 210, 211, max = 255),
               rgb(210, 210, 210, max = 255))
+
+load("county_profile.rdata")
 ```
 
 # Introduction
