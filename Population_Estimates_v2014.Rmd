@@ -4,7 +4,7 @@ author: "Rob Kemp, Demographer, Department of Local Affairs"
 date: "November 6, 2015"
 output:
   html_document:
-    css: journal-chicago/css/journal-chicago.css
+    theme: cosmo
     md_extensions: -table_captions
 
 ---
